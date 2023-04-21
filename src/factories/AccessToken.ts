@@ -12,6 +12,7 @@ class AccessTokenFactory {
     const refresh: string | null = localStorageToken.refresh ? localStorageToken.refresh : null
     const scopes: Array<string> = localStorageToken.scopes ? localStorageToken.scopes.split(' ') : []
     const expiresAt: Date = new Date(localStorageToken.expiresAt)
+    expiresAt.setSeconds(expiresAt.getSeconds() - 10800)
 
     return new AccessToken(
       localStorageToken.token,

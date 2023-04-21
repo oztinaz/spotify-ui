@@ -11,3 +11,7 @@ import { storeToRefs } from 'pinia'
 const store = useStore()
 const { message } = storeToRefs(store)
 </script>
+
+<style scoped>
+
+</style>
