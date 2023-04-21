@@ -60,6 +60,7 @@ export const useAuthorizationStore = defineStore('authorization', () => {
   return {
     fetchSpotifyAccessToken,
     refreshSpotifyAccessToken,
-    setAccessToken
+    setAccessToken,
+    token
   }
 })
