@@ -39,7 +39,7 @@ const router = createRouter({
       component: PlaylistsView
     },
     {
-      path: '/playlist/:id',
+      path: '/playlist/:playlistId',
       name: 'playlist',
       component: PlaylistView
     }
