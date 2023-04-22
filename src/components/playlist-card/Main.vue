@@ -28,14 +28,13 @@ const props = defineProps<{
 <style scoped>
 .playlist-list-card {
   align-items: center;
-  background: rgba(232, 255, 232, 0.659);
+  /* background: rgba(232, 255, 232, 0.659); */
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
   display: flex;
   gap: 20px;
-  padding: 10px ;
-  width: 400px;
+  padding: 10px;
 }
 
 .info-container {
