@@ -3,6 +3,7 @@ import AskAuthorizationView from '@/views/AskAuthorizationView.vue'
 import AuthorizationView from '@/views/AuthorizationView.vue'
 import HomeView from '@/views/HomeView.vue'
 import TokenExpiredView from '@/views/TokenExpiredView.vue'
+import CreatePlaylistView from '@/views/CreatePlaylistView.vue'
 import PlaylistsView from '@/views/PlaylistsView.vue'
 import PlaylistView from '@/views/PlaylistView.vue'
 import { useAuthorizationStore } from '@/stores/authorization'
@@ -42,6 +43,11 @@ const router = createRouter({
       path: '/playlist/:playlistId',
       name: 'playlist',
       component: PlaylistView
+    },
+    {
+      path: '/create-playlist',
+      name: 'create-playlist',
+      component: CreatePlaylistView
     }
   ]
 })

@@ -48,6 +48,7 @@ export const usePlaylistStore = defineStore('playlist', () => {
       throw error
     })
   }
+  
   return {
     getPlaylist,
     getUserPlaylists,
